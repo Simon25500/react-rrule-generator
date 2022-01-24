@@ -10,7 +10,7 @@ import computeRRuleFromString from '../utils/computeRRule/fromString/computeRRul
 import configureInitialState from '../utils/configureInitialState';
 import translateLabel from '../utils/translateLabel';
 import translations from '../translations';
-import '../styles/index.css';
+import '../styles/index.scss';
 
 class ReactRRuleGenerator extends PureComponent {
   // compute default view based on user's config
@@ -63,7 +63,7 @@ class ReactRRuleGenerator extends PureComponent {
     } = this.state;
 
     return (
-      <div>
+      <div className="react-rrule-generator">
 
         {
           !options.hideError && error && (
@@ -73,7 +73,7 @@ class ReactRRuleGenerator extends PureComponent {
           )
         }
 
-        <div className="px-0 pt-3 border rounded">
+        <div className="react-rrule-content">
 
           {
             !options.hideStart && (

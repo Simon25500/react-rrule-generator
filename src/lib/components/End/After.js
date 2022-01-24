@@ -9,19 +9,19 @@ const EndAfter = ({
   handleChange,
   translations
 }) => (
-  <div className="col-sm-4">
-    <div className="form-group m-0 row d-flex align-items-center">
-      <div className="col-3 col-sm-6 pl-0">
+  <div className="end-option">
+    <div className="end-option">
+      <div className="end-option-element">
         <input
           id={id}
           name="end.after"
           aria-label="End after"
-          className="form-control"
+          className="input-number"
           value={after}
           onChange={numericalFieldHandler(handleChange)}
         />
       </div>
-      <div className="col-9 col-sm-6">
+      <div className="end-option-element">
         {translateLabel(translations, 'end.executions')}
       </div>
     </div>

@@ -15,8 +15,8 @@ const RepeatMonthlyOnThe = ({
   const isActive = mode === 'on the';
 
   return (
-    <div className={`form-group row d-flex align-items-sm-center ${!isActive && 'opacity-50'}`}>
-      <div className="col-sm-1 offset-sm-2">
+    <div className={`repeat-option ${!isActive && 'opacity-50'}`}>
+      <div className="repeat-option-element">
         {hasMoreModes && (
           <input
             id={id}
@@ -29,11 +29,11 @@ const RepeatMonthlyOnThe = ({
           />
         )}
       </div>
-      <div className="col-sm-1">
+      <div className="repeat-option-element">
         {translateLabel(translations, 'repeat.monthly.on_the')}
       </div>
 
-      <div className="col-sm-2">
+      <div className="repeat-option-element">
         <select
           id={`${id}-which`}
           name="repeat.monthly.onThe.which"
@@ -51,7 +51,7 @@ const RepeatMonthlyOnThe = ({
         </select>
       </div>
 
-      <div className="col-sm-3">
+      <div className="repeat-option-element">
         <select
           id={`${id}-day`}
           name="repeat.monthly.onThe.day"

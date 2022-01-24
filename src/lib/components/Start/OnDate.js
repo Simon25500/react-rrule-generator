@@ -14,7 +14,7 @@ const StartOnDate = ({
     options,
   },
   handleChange,
-  translations
+  translations,
 }) => {
   const CustomCalendar = options.calendarComponent;
   const locale = options.weekStartsOnSunday ? 'en-ca' : 'en-gb';
@@ -27,13 +27,13 @@ const StartOnDate = ({
   };
 
   return (
-    <div className="col-6 col-sm-3">
+    <div className="rrule-start-input">
       {
         CustomCalendar
           ? <CustomCalendar
-            key={`${id}-calendar`}
-            {...calendarAttributes}
-            onChange={(event) => {
+              key={`${id}-calendar`}
+              {...calendarAttributes}
+              onChange={(event) => {
               const editedEvent = {
                 target: {
                   value: event.target.value,
@@ -45,21 +45,21 @@ const StartOnDate = ({
             }}
           />
           : <DateTime
-            {...calendarAttributes}
-            inputProps={
+              {...calendarAttributes}
+              inputProps={
               {
                 id: `${id}-datetime`,
                 name: 'start.onDate.date',
                 readOnly: true,
               }
             }
-            locale={translateLabel(translations, 'locale')}
-            timeFormat={false}
-            viewMode="days"
-            closeOnSelect
-            closeOnTab
-            required
-            onChange={(inputDate) => {
+              locale={translateLabel(translations, 'locale')}
+              timeFormat={false}
+              viewMode="days"
+              closeOnSelect
+              closeOnTab
+              required
+              onChange={(inputDate) => {
               const editedEvent = {
                 target: {
                   value: moment(inputDate).format(DATE_TIME_FORMAT),

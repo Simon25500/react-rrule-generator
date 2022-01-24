@@ -1,0 +1,19 @@
+.react-rrule-repeat{
+  width: 100%; 
+  padding: 20px;
+  &>.react-rrule-repeat-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &>.react-rrule-repeat-label{
+      margin-right: 20px;
+    }
+  }
+  .repeat-option{
+    display: flex;
+    align-items: center;
+    &>.repeat-option-element{
+      margin: 10px;
+    }
+  }
+}

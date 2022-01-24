@@ -19,8 +19,8 @@ const RepeatYearlyOn = ({
   const isActive = mode === 'on';
 
   return (
-    <div className={`form-group row d-flex align-items-sm-center ${!isActive && 'opacity-50'}`}>
-      <div className="col-sm-1 offset-sm-2">
+    <div className={`repeat-option ${!isActive && 'opacity-50'}`}>
+      <div className="repeat-option-element">
 
         {hasMoreModes && (
           <input
@@ -35,11 +35,11 @@ const RepeatYearlyOn = ({
         )}
       </div>
 
-      <div className="col-sm-1">
+      <div className="repeat-option-element">
         {translateLabel(translations, 'repeat.yearly.on')}
       </div>
 
-      <div className="col-sm-2">
+      <div className="repeat-option-element">
         <select
           id={`${id}-month`}
           name="repeat.yearly.on.month"
@@ -53,7 +53,7 @@ const RepeatYearlyOn = ({
         </select>
       </div>
 
-      <div className="col-sm-2">
+      <div className="repeat-option-element">
         <select
           id={`${id}-day`}
           name="repeat.yearly.on.day"

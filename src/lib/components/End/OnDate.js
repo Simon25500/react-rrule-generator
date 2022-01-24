@@ -28,7 +28,7 @@ const EndOnDate = ({
   };
 
   return (
-    <div className="col-6 col-sm-3">
+    <div className="end-option">
       {
         CustomCalendar
           ? <CustomCalendar
@@ -58,6 +58,7 @@ const EndOnDate = ({
             timeFormat={false}
             viewMode="days"
             closeOnSelect
+            className='end-option-element'
             closeOnTab
             required
             onChange={(inputDate) => {

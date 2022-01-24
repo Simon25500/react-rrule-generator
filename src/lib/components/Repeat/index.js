@@ -7,6 +7,8 @@ import RepeatDaily from './Daily/index';
 import RepeatHourly from './Hourly/index';
 import translateLabel from '../../utils/translateLabel';
 
+import './index.scss';
+
 const Repeat = ({
   id,
   repeat: {
@@ -25,19 +27,18 @@ const Repeat = ({
   const isOptionSelected = option => frequency === option;
 
   return (
-    <div className="px-3">
-      <div className="form-group row">
-        <div className="col-sm-2 text-sm-right">
+    <div className="react-rrule-repeat">
+      <div className="react-rrule-repeat-content">
+        <div className="react-rrule-repeat-label">
           <label
             htmlFor={`${id}-frequency`}
-            className="col-form-label"
           >
             <strong>
               {translateLabel(translations, 'repeat.label')}
             </strong>
           </label>
         </div>
-        <div className="col-sm-6">
+        <div className="repeat-select">
           <select
             name="repeat.frequency"
             id={`${id}-frequency`}

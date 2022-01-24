@@ -1,0 +1,54 @@
+@import 'react-datetime.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+.react-rrule-generator{
+  width: 100%;
+}
+
+.opacity-50{
+  opacity: 50%;
+}
+
+input[type=text]{
+  height: 30px;
+  min-width: 200px;
+  border-radius: 7px;
+  border: 1px solid rgb(139, 139, 139);
+  &:focus{
+    outline: none;
+  }
+}
+input[type=number]{
+  height: 30px;
+  min-width: 200px;
+  border-radius: 7px;
+  border: 1px solid rgb(139, 139, 139);
+  &:focus{
+    outline: none;
+  }
+}
+
+.input-number{
+  height: 30px;
+  min-width: 200px;
+  border-radius: 7px;
+  border: 1px solid rgb(139, 139, 139);
+  &:focus{
+    outline: none;
+  }
+}
+
+select{
+  height: 30px;
+  min-width: 200px;
+  border-radius: 7px;
+  background-color: #fff;
+  border: 1px solid rgb(139, 139, 139);
+  &:focus{
+    outline: none;
+  }
+}

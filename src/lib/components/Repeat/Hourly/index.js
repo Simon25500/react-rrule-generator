@@ -11,21 +11,21 @@ const RepeatHourly = ({
   handleChange,
   translations
 }) => (
-  <div className="form-group row d-flex align-items-sm-center">
-    <div className="col-sm-1 offset-sm-2">
+  <div className="repeat-option">
+    <div className="repeat-option-element">
       {translateLabel(translations, 'repeat.hourly.every')}
     </div>
-    <div className="col-sm-2">
+    <div className="repeat-option-element">
       <input
         id={`${id}-interval`}
         name="repeat.hourly.interval"
         aria-label="Repeat hourly interval"
-        className="form-control"
+        className="input-number"
         value={interval}
         onChange={numericalFieldHandler(handleChange)}
       />
     </div>
-    <div className="col-sm-1">
+    <div className="repeat-option-element">
       {translateLabel(translations, 'repeat.hourly.hours')}
     </div>
   </div>

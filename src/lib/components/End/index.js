@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import EndAfter from './After';
 import EndOnDate from './OnDate';
-
+import './index.scss';
 import translateLabel from '../../utils/translateLabel';
 
 const End = ({
@@ -20,12 +20,11 @@ const End = ({
   const isOptionSelected = option => mode === option;
 
   return (
-    <div className="px-3">
-      <div className="form-group row">
-        <div className="col-sm-2 text-sm-right">
+    <div className="react-rrule-end">
+      <div className="react-rrule-end-content">
+        <div className="react-rrule-repeat-label">
           <label
             htmlFor={id}
-            className="col-form-label"
           >
             <strong>
               {translateLabel(translations, 'end.label')}

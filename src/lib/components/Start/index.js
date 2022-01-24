@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StartOnDate from './OnDate';
-
+import './index.scss';
 import translateLabel from '../../utils/translateLabel';
 
 const Start = ({
@@ -12,12 +12,11 @@ const Start = ({
   handleChange,
   translations
 }) => (
-  <div className="px-3">
-    <div className="form-group row">
-      <div className="col-sm-2 text-sm-right">
+  <div className="react-rrule-start">
+    <div className="form-group">
+      <div className="start-input">
         <label
           htmlFor={id}
-          className="col-form-label"
         >
           <strong>
             {translateLabel(translations, 'start.label')}
