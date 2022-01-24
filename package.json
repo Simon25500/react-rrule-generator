@@ -1,10 +1,10 @@
 {
   "name": "@simon.chardon/react-rrule-generator",
   "version": "1.2.0",
-  "author": "Filip Duczyminski <fduczyminski@gmail.com>",
+  "author": "Simon Chardon",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fafruch/react-rrule-generator.git"
+    "url": "git+https://github.com/Simon25500/react-rrule-generator.git"
   },
   "license": "MIT",
   "main": "build/index.js",
@@ -17,9 +17,9 @@
     "deploy": "gh-pages -d build-demo"
   },
   "bugs": {
-    "url": "https://github.com/Fafruch/react-rrule-generator/issues"
+    "url": "https://github.com/Simon25500/react-rrule-generator/issues"
   },
-  "homepage": "https://fafruch.github.io/react-rrule-generator",
+  "homepage": "https://github.com/Simon25500/react-rrule-generator",
   "devDependencies": {
     "autoprefixer": "7.1.2",
     "babel-cli": "^6.26.0",
