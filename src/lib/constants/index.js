@@ -26,3 +26,4 @@ export const DAYS = [
   'Weekday',
   'Weekend day'
 ];
+

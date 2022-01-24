@@ -6,6 +6,7 @@ import translateLabel from '../../utils/translateLabel';
 
 const Start = ({
   id,
+  local,
   start: {
     onDate,
   },
@@ -23,18 +24,23 @@ const Start = ({
           </strong>
         </label>
       </div>
-      <StartOnDate id={id} onDate={onDate} handleChange={handleChange} translations={translations} />
+      <StartOnDate local={local} id={id} onDate={onDate} handleChange={handleChange} translations={translations} />
     </div>
   </div>
 );
 
 Start.propTypes = {
   id: PropTypes.string.isRequired,
+  local: PropTypes.string,
   start: PropTypes.shape({
     onDate: PropTypes.object.isRequired,
   }).isRequired,
   handleChange: PropTypes.func.isRequired,
   translations: PropTypes.oneOfType([PropTypes.object, PropTypes.func]).isRequired,
+};
+
+Start.defaultProps = {
+  local: 'en-gb',
 };
 
 export default Start;

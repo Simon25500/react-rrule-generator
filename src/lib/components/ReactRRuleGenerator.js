@@ -81,10 +81,10 @@ class ReactRRuleGenerator extends PureComponent {
                 <Start
                   id={`${id}-start`}
                   start={start}
+                  local={this.props.local}
                   handleChange={this.handleChange}
                   translations={this.props.translations}
                 />
-                <hr />
               </div>
             )
           }
@@ -101,10 +101,10 @@ class ReactRRuleGenerator extends PureComponent {
           {
             !options.hideEnd && (
               <div>
-                <hr />
                 <End
                   id={`${id}-end`}
                   end={end}
+                  local={this.props.local}
                   handleChange={this.handleChange}
                   translations={this.props.translations}
                 />
@@ -130,6 +130,7 @@ ReactRRuleGenerator.propTypes = {
     hideError: PropTypes.bool,
     weekStartsOnSunday: PropTypes.bool,
   }),
+  local: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func,
   calendarComponent: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
@@ -140,6 +141,7 @@ ReactRRuleGenerator.defaultProps = {
   value: '',
   config: {},
   onChange() {},
+  local: 'en-gb',
   calendarComponent: null,
   translations: translations.english,
 };

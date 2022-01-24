@@ -9,6 +9,7 @@ import translateLabel from '../../utils/translateLabel';
 
 const EndOnDate = ({
   id,
+  local,
   onDate: {
     date,
     options,
@@ -18,7 +19,7 @@ const EndOnDate = ({
 }) => {
   const CustomCalendar = options.calendarComponent;
 
-  const locale = options.weekStartsOnSunday ? 'en-ca' : 'en-gb';
+  const locale = local;
   const calendarAttributes = {
     'aria-label': translateLabel(translations, 'end.tooltip'),
     value: date,
@@ -79,6 +80,7 @@ const EndOnDate = ({
 
 EndOnDate.propTypes = {
   id: PropTypes.string.isRequired,
+  local: PropTypes.string.isRequired,
   onDate: PropTypes.shape({
     date: PropTypes.string.isRequired,
     options: PropTypes.shape({

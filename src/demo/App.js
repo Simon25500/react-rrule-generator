@@ -32,6 +32,7 @@ class App extends Component {
       <ReactRRuleGenerator
         onChange={this.handleChange}
         value={this.state.rrule}
+        local="fr-fr"
         config={{
               hideStart: false,
             }}

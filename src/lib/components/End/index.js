@@ -7,6 +7,7 @@ import translateLabel from '../../utils/translateLabel';
 
 const End = ({
   id,
+  local,
   end: {
     mode,
     after,
@@ -59,6 +60,7 @@ const End = ({
           <EndOnDate
             id={`${id}-onDate`}
             onDate={onDate}
+            local={local}
             handleChange={handleChange}
             translations={translations}
           />
@@ -71,6 +73,7 @@ const End = ({
 
 End.propTypes = {
   id: PropTypes.string.isRequired,
+  local: PropTypes.string,
   end: PropTypes.shape({
     mode: PropTypes.string.isRequired,
     after: PropTypes.number.isRequired,
@@ -82,6 +85,10 @@ End.propTypes = {
   }).isRequired,
   handleChange: PropTypes.func.isRequired,
   translations: PropTypes.oneOfType([PropTypes.object, PropTypes.func]).isRequired,
+};
+
+End.defaultProps = {
+  local: 'en-gb',
 };
 
 export default End;

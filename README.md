@@ -1,17 +1,16 @@
 # React RRule Generator
-> Recurrence rules generator form built with React
+> Recurrence rules generator form built with React 
+
 
 [![LICENSE](https://img.shields.io/npm/l/express.svg)](LICENSE)
 [![npm](https://img.shields.io/npm/dm/localeval.svg)](https://npm-stat.com/charts.html?package=react-rrule-generator)
-
-### This project is no longer maintained by me. Thank you for all your past contributions. Let the forks rock it for you.
 
 
 ![Screenshot](https://i.imgur.com/FU3aGlz.png)
 
 ## Description
 
-This is [ReactJS](http://facebook.github.io/react/index.html) project based on [Create React Library](https://github.com/UdiliaInc/create-react-library) and using [Bootstrap](https://github.com/twbs/bootstrap) styling. It's built with the help of a great [rrule.js](https://github.com/jakubroztocil/rrule) library.
+This is [ReactJS](http://facebook.github.io/react/index.html) project based on [Create React Library](https://github.com/UdiliaInc/create-react-library)  It's built with the help of a great [rrule.js](https://github.com/jakubroztocil/rrule) library.
 
 It also uses:
 * [lodash](https://github.com/lodash/lodash)
@@ -29,7 +28,6 @@ https://fafruch.github.io/react-rrule-generator
 
 In your CSS index file don't forget to import styles:
 ```css
-@import '~bootstrap/dist/css/bootstrap.css';       // this lib uses boostrap (v. 4.0.0-beta.2)
 @import '~react-rrule-generator/build/styles.css'; // react-rrule-generator's custom CSS
 ```
 

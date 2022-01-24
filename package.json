@@ -1,5 +1,5 @@
 {
-  "name": "react-rrule-generator",
+  "name": "@simon.chardon/react-rrule-generator",
   "version": "1.2.0",
   "author": "Filip Duczyminski <fduczyminski@gmail.com>",
   "repository": {
@@ -127,5 +127,10 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "dependencies": {
+    "mini-css-extract-plugin": "^2.5.2",
+    "my-package": "0.0.0"
+  },
+  "description": "> Recurrence rules generator form built with React"
 }
