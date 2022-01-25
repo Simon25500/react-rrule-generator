@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import EndAfter from './After';
 import EndOnDate from './OnDate';
-import './index.scss';
 import translateLabel from '../../utils/translateLabel';
 
 const End = ({

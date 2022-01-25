@@ -7,7 +7,6 @@ import RepeatDaily from './Daily/index';
 import RepeatHourly from './Hourly/index';
 import translateLabel from '../../utils/translateLabel';
 
-import './index.scss';
 
 const Repeat = ({
   id,
