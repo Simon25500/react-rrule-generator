@@ -141,7 +141,7 @@ ReactRRuleGenerator.defaultProps = {
   value: '',
   config: {},
   onChange() {},
-  local: 'en-gb',
+  local: 'fr-fr',
   calendarComponent: null,
   translations: translations.french,
 };

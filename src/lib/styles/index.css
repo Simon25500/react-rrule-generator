@@ -11,8 +11,8 @@ body {
   border-radius: 10px;
 }
 
-.opacity-50{
-  opacity: 50%;
+.rrule-generator-opacity-50{
+  opacity: 0.5 !important;
 }
 
 input[type=text]{
