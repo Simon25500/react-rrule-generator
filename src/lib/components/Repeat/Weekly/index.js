@@ -30,7 +30,7 @@ const RepeatWeekly = ({
             id={`${id}-interval`}
             name="repeat.weekly.interval"
             aria-label="Repeat weekly interval"
-            className="input-number"
+            className="rrule-input-number"
             value={interval}
             onChange={numericalFieldHandler(handleChange)}
           />
@@ -52,7 +52,7 @@ const RepeatWeekly = ({
                 type="checkbox"
                 id={`${id}-${dayName}`}
                 name={`repeat.weekly.days[${dayName}]`}
-                className="form-control"
+                className="rrule-input-checkbox form-control"
                 checked={isDayActive}
                 onChange={(event) => {
                   const editedEvent = {

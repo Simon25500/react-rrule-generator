@@ -16,7 +16,7 @@ const EndAfter = ({
           id={id}
           name="end.after"
           aria-label="End after"
-          className="input-number"
+          className="rrule-input-number"
           value={after}
           onChange={numericalFieldHandler(handleChange)}
         />

@@ -20,7 +20,7 @@ const RepeatHourly = ({
         id={`${id}-interval`}
         name="repeat.hourly.interval"
         aria-label="Repeat hourly interval"
-        className="input-number"
+        className="rrule-input-number"
         value={interval}
         onChange={numericalFieldHandler(handleChange)}
       />

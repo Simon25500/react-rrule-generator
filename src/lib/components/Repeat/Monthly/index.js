@@ -31,7 +31,7 @@ const RepeatMonthly = ({
             id={`${id}-interval`}
             name="repeat.monthly.interval"
             aria-label="Repeat monthly interval"
-            className="input-number"
+            className="rrule-input-number"
             value={interval}
             onChange={numericalFieldHandler(handleChange)}
           />

@@ -35,7 +35,7 @@ const End = ({
           <select
             name="end.mode"
             id={id}
-            className="form-control"
+            className="form-control rrule-select"
             value={mode}
             onChange={handleChange}
           >

@@ -20,6 +20,7 @@ const RepeatMonthlyOn = ({
           <input
             id={id}
             type="radio"
+            className='rrule-input-radio'
             name="repeat.monthly.mode"
             aria-label="Repeat monthly on"
             value="on"
@@ -37,7 +38,7 @@ const RepeatMonthlyOn = ({
           id={`${id}-day`}
           name="repeat.monthly.on.day"
           aria-label="Repeat monthly on a day"
-          className="form-control"
+          className="form-control rrule-select"
           value={on.day}
           disabled={!isActive}
           onChange={numericalFieldHandler(handleChange)}

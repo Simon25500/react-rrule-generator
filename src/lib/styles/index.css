@@ -15,7 +15,7 @@ body {
   opacity: 0.5 !important;
 }
 
-input[type=text]{
+.rrule-input-text{
   height: 30px;
   min-width: 150px;
   border-radius: 7px;
@@ -23,32 +23,22 @@ input[type=text]{
   
 }
 
-input[type=text]:focus{
+.rrule-input-text:focus{
   outline: none;
 }
-input[type=number]{
+.rrule-input-number{
   height: 30px;
   min-width: 150px;
   border-radius: 7px;
   border: 1px solid rgb(139, 139, 139);
   
 }
-input[type=number]:focus{
+.rrule-input-number:focus{
   outline: none;
 }
 
-.input-number{
-  height: 30px;
-  min-width: 150px;
-  border-radius: 7px;
-  border: 1px solid rgb(139, 139, 139);
-  
-}
-.input-number:focus{
-  outline: none;
-}
 
-select{
+.rrule-select{
   height: 30px;
   min-width: 150px;
   border-radius: 7px;
@@ -56,7 +46,7 @@ select{
   border: 1px solid rgb(139, 139, 139);
   
 }
-select:focus{
+.rrule-select:focus{
   outline: none;
 }
 

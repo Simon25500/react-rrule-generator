@@ -41,7 +41,7 @@ const Repeat = ({
           <select
             name="repeat.frequency"
             id={`${id}-frequency`}
-            className="form-control"
+            className="form-control rrule-select"
             value={frequency}
             onChange={handleChange}
           >

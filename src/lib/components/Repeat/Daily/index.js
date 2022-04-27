@@ -20,7 +20,7 @@ const RepeatDaily = ({
         id={`${id}-interval`}
         name="repeat.daily.interval"
         aria-label="Repeat daily interval"
-        className="input-number"
+        className="rrule-input-number"
         value={interval}
         onChange={numericalFieldHandler(handleChange)}
       />
